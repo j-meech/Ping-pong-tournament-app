@@ -6,7 +6,7 @@ export class TournamentViewer extends Component {
 		const shuffledPlayers = players.sortBy(Math.random);
 		return (
 
-			<ul>
+			<ul className="tournament-grid">
 				{ shuffledPlayers.map((player, index) => 
 					<li key={index}>
 						{player}
