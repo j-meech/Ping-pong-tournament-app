@@ -1,0 +1,89 @@
+
+.grid-container {
+	margin-top: 15vh;
+	height: 70vh;
+	width: 90vw;
+	background-color: #000;
+	border-radius: 2rem;
+	margin: auto;
+}
+
+ul.tournament-grid {
+	display: grid;
+	grid-template-columns: repeat(16, 1fr);
+	grid-template-rows: repeat(8, 40px); 
+}
+
+li.tournament-player {
+	font-size: 1.5rem;
+	margin: auto;
+	grid-column-end: span 2;
+	grid-row-end: span 2;
+}
+
+li.path-u {
+	grid-column-end: span 2;
+	grid-row-end: span 1;
+	border-bottom: solid 6px #fff;
+	border-left: solid 6px #fff;
+	border-right: solid 6px #fff;
+	grid-row-start: 3;
+}
+
+li.path-u.one {
+	grid-column-start: 2;
+}
+
+li.path-u.two {
+	grid-column-start: 6;
+}
+
+li.path-u.three {
+	grid-column-start: 10;
+}
+
+li.path-u.four {
+	grid-column-start: 14;
+}
+
+li.path-i {
+	border-right: solid 3px #fff;
+	grid-row-start: 4;
+}
+
+li.path-i.one {
+	grid-column-start: 2;
+}
+
+li.path-i.two {
+	grid-column-start: 6;
+}
+
+li.path-i.three {
+	grid-column-start: 10;
+}
+
+li.path-i.four {
+	grid-column-start: 14;
+}
+
+li.path-l {
+	border-left: solid 3px #fff;
+	grid-row-start: 4;
+}
+
+li.path-l.one {
+	grid-column-start: 3;
+}
+
+li.path-l.two {
+	grid-column-start: 7;
+}
+
+li.path-l.three {
+	grid-column-start: 11;
+}
+
+li.path-l.four {
+	grid-column-start: 15;
+}

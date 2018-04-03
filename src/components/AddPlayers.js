@@ -24,11 +24,12 @@ export class AddPlayers extends Component {
 
 	render() {
 		const { disabled } = this.props;
+		const buttonClassName = disabled ? "btn btn-disabled" : "btn";
 		
 		return (
 			<form onSubmit={ this.submit } disabled={disabled}>
         		<input onChange={ this.update } value={ this.state.value } type="text" placeholder="Player's name" disabled={this.props.disabled}/>
-        		<Button className="btn" buttonName="Add Player" disabled={disabled}/>
+        		<Button className={buttonClassName} buttonName="Add Player" disabled={disabled}/>
       		</form>
 		);
 	}

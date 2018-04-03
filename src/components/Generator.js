@@ -21,20 +21,21 @@ export class Generator extends Component {
 
 	render() {
 	    const { players } = this.props;
-	    const disabled = players.size < 4;
+	    const disabled = players.size < 8;
+	    const buttonClassName = disabled ? "btn btn-disabled" : "btn";
 
 		return (
 			<div>
 				{
-					this.state.generated ? 
-					<TournamentViewer players={ players }/>
-					:
+					!this.state.generated ? 
 					<div>
 						<h2>Add players here</h2>
 						<AddPlayers onSubmit={this.props.onSubmit} disabled={!disabled}/>
 						<ListPlayers players={ players }/>
-						<Button className="btn" onClick={this.isGenerated} buttonName="Generate!" disabled={ disabled }/>
+						<Button className={buttonClassName} onClick={this.isGenerated} buttonName="Generate!" disabled={ disabled }/>
 					</div>
+					:
+					<TournamentViewer players={ players }/>
 				}
 			</div>
 		);
