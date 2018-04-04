@@ -1,5 +1,12 @@
+const createPlayer = (player) => {
+	return {
+		name: player,
+		won: false,
+	}
+}
+
 const addPlayer = (state, { player }) => state.update("players", players => (
-	players.push(player)
+	players.push(createPlayer(player))
 ));
 
 

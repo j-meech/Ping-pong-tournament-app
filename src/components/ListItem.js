@@ -8,7 +8,7 @@ export class ListItem extends Component {
 		const { player } = this.props;
 		return (			
 			<li>
-				{ player }				
+				{ player.get('name') }				
 			</li>
 		);
 	}

@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { Button } from './Button';
+import { RoundOne } from './RoundOne';
+import { RoundTwo } from './RoundTwo';
+import { RoundThree } from './RoundThree';
+import { Winner } from './Winner';
 
 export class TournamentViewer extends Component {
 	constructor(props) {
@@ -12,32 +16,14 @@ export class TournamentViewer extends Component {
 	}
 
 	render() {
-		const { players } = this.props;
-		const shuffledPlayers = players.sortBy(Math.random);
+
 		return (
-			<div>
-				<div className="grid-container">
-					<ul className="tournament-grid">
-						{ shuffledPlayers.map((player, index) => 
-							<li key={index} className="tournament-player">
-								{player}
-							</li>
-						)}
-						<li className="path-u one"></li>
-						<li className="path-u two"></li>
-						<li className="path-u three"></li>
-						<li className="path-u four"></li>
-						<li className="path-i one"></li>
-						<li className="path-i two"></li>
-						<li className="path-i three"></li>
-						<li className="path-i four"></li>
-						<li className="path-l one"></li>
-						<li className="path-l two"></li>
-						<li className="path-l three"></li>
-						<li className="path-l four"></li>
-					</ul>
-				</div>
-				<div>
+			<div className="tournament-viewer-container">
+				<RoundOne players={this.props.players}/>
+				<RoundTwo />
+				<RoundThree />
+				<Winner />
+				<div className="new-tournament-btn">
 					<Button className="btn" buttonName="New Tournament" onClick={this.onClick}/>
 				</div>
 			</div>

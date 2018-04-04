@@ -1,0 +1,10 @@
+
+.grid-container.round-two {
+	border-radius: 0rem;
+}
+
+ul.tournament-grid.round-two {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(4, 40px); 
+}
