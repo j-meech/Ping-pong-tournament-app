@@ -1,7 +1,13 @@
-export const addPlayer = (player) => {
+export const addPlayer = player => {
 	return {
 		type: 'addPlayer',
 		player: player,		
 	}
 }
 
+export const deletePlayer = name => {
+	return {
+		type: 'deletePlayer',
+		name: name,
+	}
+}

@@ -1,18 +1,26 @@
+import { Map } from "immutable";
+
+
 const createPlayer = (player) => {
-	return {
-		name: player,
-		won: false,
-	}
+	return Map({
+			name: player,
+			won: false,
+		})
 }
 
 const addPlayer = (state, { player }) => state.update("players", players => (
 	players.push(createPlayer(player))
 ));
 
+const deletePlayer = (state, { name }) => state.update("players", players => (
+	players.filter(player => (player.get("name") !== name)
+)));
+
 
 const reducer = (state, action) => {
 	switch (action.type) {
 		case "addPlayer": return addPlayer(state, action);
+		case "deletePlayer": return deletePlayer(state, action);
 		default: return state;
 	}
 };

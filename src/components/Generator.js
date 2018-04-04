@@ -20,6 +20,7 @@ export class Generator extends Component {
 		// reset generator
 	}
 
+	
 	render() {
 	    const { players } = this.props;
 	    const disabled = players.size < 8;
@@ -31,7 +32,7 @@ export class Generator extends Component {
 					<div className="generator-container">
 						<h2>Add players here</h2>
 						<AddPlayers onSubmit={this.props.onSubmit} disabled={!disabled}/>
-						<ListPlayers players={ players }/>
+						<ListPlayers players={ players } onDelete={ this.props.onDelete }/>
 						<Button className={buttonClassName} onClick={this.isGenerated} buttonName="Generate tournament!" disabled={ disabled }/>
 					</div>
 					:
