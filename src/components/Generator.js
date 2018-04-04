@@ -11,13 +11,20 @@ export class Generator extends Component {
 			generated: false,
     	};
 		this.isGenerated = this.isGenerated.bind(this);
+		this.newTournament = this.newTournament.bind(this);
 	}
 
 	isGenerated() {
 		this.setState({
 			generated: !this.state.generated,
 		});
-		// reset generator
+	}
+
+	newTournament() {
+		this.props.onRefresh();
+		this.setState({
+			generated: !this.state.generated,
+		});
 	}
 
 	
@@ -36,7 +43,7 @@ export class Generator extends Component {
 						<Button className={buttonClassName} onClick={this.isGenerated} buttonName="Generate tournament!" disabled={ disabled }/>
 					</div>
 					:
-					<TournamentViewer players={ players } newTournament={this.isGenerated}/>
+					<TournamentViewer players={ players } newTournament={this.newTournament}/>
 				}
 			</div>
 		);

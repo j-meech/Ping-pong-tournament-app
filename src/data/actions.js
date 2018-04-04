@@ -11,3 +11,9 @@ export const deletePlayer = name => {
 		name: name,
 	}
 }
+
+export const refresh = name => {
+	return {
+		type: 'refresh',
+	}
+}

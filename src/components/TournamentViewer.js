@@ -18,11 +18,13 @@ export class TournamentViewer extends Component {
 	render() {
 
 		return (
-			<div className="tournament-viewer-container">
-				<RoundOne players={this.props.players}/>
-				<RoundTwo />
-				<RoundThree />
-				<Winner />
+			<div>
+				<div className="tournament-viewer-container">
+					<RoundOne players={this.props.players}/>
+					<RoundTwo />
+					<RoundThree />
+					<Winner />
+				</div>
 				<div className="new-tournament-btn">
 					<Button className="btn" buttonName="New Tournament" onClick={this.onClick}/>
 				</div>

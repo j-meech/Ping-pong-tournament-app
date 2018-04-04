@@ -8,8 +8,8 @@ export class RoundOne extends Component {
 		return (
 			<div className="grid-container">
 				<ul className="tournament-grid">
-					{ shuffledPlayers.map(player => 
-						<li key={player.get('id')} className="tournament-player">
+					{ shuffledPlayers.map((player, index) => 
+						<li key={index} className="tournament-player">
 							{player.get('name')}
 						</li>
 					)}

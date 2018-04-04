@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { Generator } from '../components/Generator';
-import { addPlayer, deletePlayer } from '../data/actions';
+import { addPlayer, deletePlayer, refresh } from '../data/actions';
 
 const mapStateToProps = state => {
     return {
@@ -12,6 +12,7 @@ const mapDispatchToProps = dispatch => {
     return {
     	 onSubmit: (data) => dispatch(addPlayer(data)),
     	 onDelete: (id) => dispatch(deletePlayer(id)),
+    	 onRefresh: () => dispatch(refresh()),
     };
 };
 

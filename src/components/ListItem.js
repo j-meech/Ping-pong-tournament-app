@@ -10,7 +10,6 @@ export class ListItem extends Component {
 
 	delete() {
 		const name = this.props.player.get('name');
-		console.log(name);
 		this.props.onDelete(name);
 	}
 	

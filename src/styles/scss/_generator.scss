@@ -1,6 +1,6 @@
 .generator-container {
 	width: 40vw;
-	height: 60vh;
+	// height: 70vh;
 	background-color: $background-colour;
 	padding: 2rem;
 	border-radius: 2rem;
@@ -8,6 +8,10 @@
 }
 
 .player-list-item {
+
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem 1rem;
 
 	.delete-btn {
 		color: #fff;

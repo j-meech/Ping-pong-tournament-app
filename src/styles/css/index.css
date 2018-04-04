@@ -27,7 +27,7 @@ body {
   color: #fff;
   background-color: transparent;
   border: solid 2px #fff;
-  margin: 2rem; }
+  margin: 1rem; }
 
 .btn-disabled {
   color: rgba(230, 230, 230, 0.3);
@@ -47,24 +47,30 @@ ul {
 
 .generator-container {
   width: 40vw;
-  height: 60vh;
   background-color: rgba(23, 28, 23, 0.7);
   padding: 2rem;
   border-radius: 2rem;
   margin-left: 8vw; }
 
-.player-list-item .delete-btn {
-  color: #fff;
-  background-color: transparent;
-  border: none; }
+.player-list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem; }
+  .player-list-item .delete-btn {
+    color: #fff;
+    background-color: transparent;
+    border: none; }
 
 .tournament-viewer-container {
-  margin-top: 10vh; }
+  margin-top: 15vh;
+  width: 95vw;
+  background-color: rgba(23, 28, 23, 0.7);
+  border-radius: 2rem;
+  margin: auto; }
 
 .grid-container {
   margin-top: 15vh;
   width: 95vw;
-  background-color: rgba(23, 28, 23, 0.7);
   border-radius: 2rem 2rem 0rem 0rem;
   padding: 0.8rem;
   margin: auto; }
@@ -83,9 +89,9 @@ li.tournament-player {
 li.path-u {
   grid-column-end: span 2;
   grid-row-end: span 1;
-  border-bottom: solid 6px #fff;
-  border-left: solid 6px #fff;
-  border-right: solid 6px #fff;
+  border-bottom: solid 4px #fff;
+  border-left: solid 4px #fff;
+  border-right: solid 4px #fff;
   grid-row-start: 3; }
 
 li.path-u.one {
@@ -101,7 +107,7 @@ li.path-u.four {
   grid-column-start: 14; }
 
 li.path-i {
-  border-right: solid 3px #fff;
+  border-right: solid 2px #fff;
   grid-row-start: 4; }
 
 li.path-i.one {
@@ -117,7 +123,7 @@ li.path-i.four {
   grid-column-start: 14; }
 
 li.path-l {
-  border-left: solid 3px #fff;
+  border-left: solid 2px #fff;
   grid-row-start: 4; }
 
 li.path-l.one {

@@ -2,7 +2,7 @@
 .grid-container {
 	margin-top: 15vh;
 	width: 95vw;
-	background-color: $background-colour;
+	// background-color: $background-colour;
 	border-radius: 2rem 2rem 0rem 0rem;
 	padding: 0.8rem;
 	margin: auto;
@@ -24,9 +24,9 @@ li.tournament-player {
 li.path-u {
 	grid-column-end: span 2;
 	grid-row-end: span 1;
-	border-bottom: solid 6px #fff;
-	border-left: solid 6px #fff;
-	border-right: solid 6px #fff;
+	border-bottom: solid 4px #fff;
+	border-left: solid 4px #fff;
+	border-right: solid 4px #fff;
 	grid-row-start: 3;
 }
 
@@ -47,7 +47,7 @@ li.path-u.four {
 }
 
 li.path-i {
-	border-right: solid 3px #fff;
+	border-right: solid 2px #fff;
 	grid-row-start: 4;
 }
 
@@ -68,7 +68,7 @@ li.path-i.four {
 }
 
 li.path-l {
-	border-left: solid 3px #fff;
+	border-left: solid 2px #fff;
 	grid-row-start: 4;
 }
 
