@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import GeneratorContainer from './containers/GeneratorContainer';
-import './App.css';
 
 class App extends Component {
   render() {

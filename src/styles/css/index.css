@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  background: url(../../ping-pong.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #fff; }
+
+.App {
+  text-align: center; }
+
+.App-header {
+  color: white; }
+
+.App-title {
+  font-size: 3em; }
+
+.btn {
+  color: #fff;
+  background-color: transparent;
+  border: solid 2px #fff; }
+
+.btn-disabled {
+  color: rgba(230, 230, 230, 0.3);
+  border-color: rgba(230, 230, 230, 0.3); }
+
+input {
+  color: #fff;
+  background-color: transparent;
+  border: solid 2px #fff;
+  padding: 4px;
+  margin: 4px; }
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px; }
+
+.grid-container {
+  margin-top: 15vh;
+  /*height: 70vh;*/
+  width: 95vw;
+  background-color: #000;
+  border-radius: 2rem;
+  padding: 0.8rem;
+  margin: auto; }
+
+ul.tournament-grid {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(8, 40px); }
+
+li.tournament-player {
+  font-size: 1rem;
+  margin: auto;
+  grid-column-end: span 2;
+  grid-row-end: span 2; }
+
+li.path-u {
+  grid-column-end: span 2;
+  grid-row-end: span 1;
+  border-bottom: solid 6px #fff;
+  border-left: solid 6px #fff;
+  border-right: solid 6px #fff;
+  grid-row-start: 3; }
+
+li.path-u.one {
+  grid-column-start: 2; }
+
+li.path-u.two {
+  grid-column-start: 6; }
+
+li.path-u.three {
+  grid-column-start: 10; }
+
+li.path-u.four {
+  grid-column-start: 14; }
+
+li.path-i {
+  border-right: solid 3px #fff;
+  grid-row-start: 4; }
+
+li.path-i.one {
+  grid-column-start: 2; }
+
+li.path-i.two {
+  grid-column-start: 6; }
+
+li.path-i.three {
+  grid-column-start: 10; }
+
+li.path-i.four {
+  grid-column-start: 14; }
+
+li.path-l {
+  border-left: solid 3px #fff;
+  grid-row-start: 4; }
+
+li.path-l.one {
+  grid-column-start: 3; }
+
+li.path-l.two {
+  grid-column-start: 7; }
+
+li.path-l.three {
+  grid-column-start: 11; }
+
+li.path-l.four {
+  grid-column-start: 15; }
+
+/*# sourceMappingURL=index.css.map */

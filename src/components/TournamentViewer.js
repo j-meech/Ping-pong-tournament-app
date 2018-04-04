@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Button } from './Button';
-import './TournamentViewer.css';
 
 export class TournamentViewer extends Component {
 	constructor(props) {
