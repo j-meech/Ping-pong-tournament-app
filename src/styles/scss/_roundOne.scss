@@ -14,11 +14,21 @@ ul.tournament-grid {
 	grid-template-rows: repeat(4, 40px); 
 }
 
-li.tournament-player {
+li.tournament-pair {
 	font-size: 1rem;
 	margin: auto;
-	grid-column-end: span 2;
+	grid-column-end: span 4;
 	grid-row-end: span 2;
+}
+
+.pair-container {
+	width: 21vw;
+	display: inline-flex;
+	justify-content: space-around;
+}
+
+.player-container {
+	display: inline-flex;
 }
 
 li.path-u {

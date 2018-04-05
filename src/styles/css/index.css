@@ -68,6 +68,15 @@ ul {
   border-radius: 2rem;
   margin: auto; }
 
+.finish-round-btn {
+  grid-column-start: 17;
+  grid-column-end: span 1;
+  grid-row-start: 3; }
+
+.finish-round-btn.winner {
+  grid-row-start: 1;
+  margin-right: 0.5rem; }
+
 .grid-container {
   margin-top: 15vh;
   width: 95vw;
@@ -80,11 +89,19 @@ ul.tournament-grid {
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(4, 40px); }
 
-li.tournament-player {
+li.tournament-pair {
   font-size: 1rem;
   margin: auto;
-  grid-column-end: span 2;
+  grid-column-end: span 4;
   grid-row-end: span 2; }
+
+.pair-container {
+  width: 21vw;
+  display: inline-flex;
+  justify-content: space-around; }
+
+.player-container {
+  display: inline-flex; }
 
 li.path-u {
   grid-column-end: span 2;
@@ -159,7 +176,10 @@ ul.tournament-grid.round-three {
 
 ul.tournament-grid.winner {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(2, 40px); }
+  grid-template-columns: 1fr 105px;
+  grid-template-rows: 60px; }
+
+.the-winner {
+  grid-column-end: span 1; }
 
 /*# sourceMappingURL=index.css.map */

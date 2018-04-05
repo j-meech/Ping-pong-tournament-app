@@ -20,6 +20,13 @@ export const shufflePlayers = () => {
 
 export const refreshTournament = name => {
 	return {
-		type: 'refresh',
+		type: 'refreshTournament',
+	}
+}
+
+export const winner = player => {
+	return {
+		type: 'winner',
+		name: player,
 	}
 }

@@ -5,3 +5,14 @@
 	border-radius: 2rem;
 	margin: auto;	
 }
+
+.finish-round-btn {
+	grid-column-start: 17;
+	grid-column-end: span 1;
+	grid-row-start: 3;
+}
+
+.finish-round-btn.winner {
+	grid-row-start: 1;
+	margin-right: 0.5rem;
+}

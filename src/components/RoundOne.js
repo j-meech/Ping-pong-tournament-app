@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
-import { TournamentPlayer } from './TournamentPlayer';
+import { TournamentPair } from './TournamentPair';
+import { Button } from './Button';
 
 export class RoundOne extends Component {
 	
 	render() {
-		const { players } = this.props;
+		const { pairs, winner, roundTwo } = this.props;
 		return (
 			<div className="grid-container">
 				<ul className="tournament-grid">
-					{ players.map((player, index) => 
-						<li key={ index } className="tournament-player">
-							<TournamentPlayer player={ player } />
+					{ pairs.map((pair, index) => 
+						<li key={ index } className="tournament-pair">
+							<TournamentPair pair={ pair } winner={ winner }/>
 						</li>
 					)}
 					<li className="path-u one"></li>
@@ -25,7 +26,11 @@ export class RoundOne extends Component {
 					<li className="path-l two"></li>
 					<li className="path-l three"></li>
 					<li className="path-l four"></li>
+					<li className="finish-round-btn">
+						<Button onClick={ roundTwo } className="btn" buttonName="Next round" /> 
+					</li>
 				</ul>
+
 			</div>
 		);
 	}

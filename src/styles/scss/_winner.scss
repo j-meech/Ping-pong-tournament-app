@@ -5,6 +5,10 @@
 
 ul.tournament-grid.winner {
 	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	grid-template-rows: repeat(2, 40px); 
+	grid-template-columns: 1fr 105px;
+	grid-template-rows: 60px; 
+}
+
+.the-winner {
+	grid-column-end: span 1;
 }
