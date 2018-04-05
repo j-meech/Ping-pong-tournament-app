@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
+import { TournamentPlayer } from './TournamentPlayer';
 
 export class RoundOne extends Component {
 	
 	render() {
 		const { players } = this.props;
-		const shuffledPlayers = players.sortBy(Math.random);
 		return (
 			<div className="grid-container">
 				<ul className="tournament-grid">
-					{ shuffledPlayers.map((player, index) => 
-						<li key={index} className="tournament-player">
-							{player.get('name')}
+					{ players.map((player, index) => 
+						<li key={ index } className="tournament-player">
+							<TournamentPlayer player={ player } />
 						</li>
 					)}
 					<li className="path-u one"></li>

@@ -18,6 +18,7 @@ export class Generator extends Component {
 		this.setState({
 			generated: !this.state.generated,
 		});
+		this.props.shuffle();
 	}
 
 	newTournament() {
@@ -29,7 +30,7 @@ export class Generator extends Component {
 
 	
 	render() {
-	    const { players } = this.props;
+	    const { players, shuffledPlayers } = this.props;
 	    const disabled = players.size < 8;
 	    const buttonClassName = disabled ? "btn btn-disabled" : "btn";
 		return (
@@ -38,12 +39,12 @@ export class Generator extends Component {
 					!this.state.generated ? 
 					<div className="generator-container">
 						<h2>Add players here</h2>
-						<AddPlayers onSubmit={this.props.onSubmit} disabled={!disabled}/>
+						<AddPlayers onSubmit={this.props.onSubmit} disabled={!disabled} players={ players }/>
 						<ListPlayers players={ players } onDelete={ this.props.onDelete }/>
 						<Button className={buttonClassName} onClick={this.isGenerated} buttonName="Generate tournament!" disabled={ disabled }/>
 					</div>
 					:
-					<TournamentViewer players={ players } newTournament={this.newTournament}/>
+					<TournamentViewer players={ shuffledPlayers } newTournament={this.newTournament}/>
 				}
 			</div>
 		);

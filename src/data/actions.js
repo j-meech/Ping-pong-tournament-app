@@ -12,7 +12,13 @@ export const deletePlayer = name => {
 	}
 }
 
-export const refresh = name => {
+export const shufflePlayers = () => {
+	return {
+		type: 'shufflePlayers',
+	}
+}
+
+export const refreshTournament = name => {
 	return {
 		type: 'refresh',
 	}

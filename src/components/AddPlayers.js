@@ -15,7 +15,7 @@ export class AddPlayers extends Component {
 
 	submit(e) {
 		e.preventDefault();
-		let data = this.state.value;
+		const data = this.state.value;
 		this.props.onSubmit(data);
 		this.setState({
 			value: "",
@@ -28,7 +28,7 @@ export class AddPlayers extends Component {
 		
 		return (
 			<form onSubmit={ this.submit } disabled={disabled}>
-        		<input onChange={ this.update } value={ this.state.value } type="text" placeholder="Player's name" disabled={this.props.disabled} maxLength="8"/>
+        		<input onChange={ this.update } value={ this.state.value } type="text" placeholder="Player's name" disabled={this.props.disabled} maxLength="8" />
         		<Button className={buttonClassName} buttonName="Add Player" disabled={disabled}/>
       		</form>
 		);
