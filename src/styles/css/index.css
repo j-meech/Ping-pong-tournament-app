@@ -19,8 +19,8 @@ body {
 
 .App-header {
   display: flex;
+  justify-content: center;
   margin-top: 4vh;
-  margin-left: 4vw;
   margin-bottom: 4vh; }
   .App-header .App-title {
     color: #8c9280;
@@ -73,7 +73,9 @@ ul {
   .player-list-item .delete-btn {
     color: white;
     background-color: transparent;
-    border: none; }
+    border: none;
+    padding: 0px;
+    margin: 0px; }
 
 .tournament-viewer-container {
   margin-top: 15vh;
@@ -82,9 +84,8 @@ ul {
   border-radius: 2rem;
   margin: auto; }
 
-.tournament-player {
+.btn.tournament-player {
   grid-column-end: span 1;
-  border: none;
   border: none;
   background-color: transparent;
   font-size: 1.2rem;
@@ -211,7 +212,8 @@ ul.tournament-grid.winner {
   border-radius: 5pxpx;
   padding: 1.5%;
   padding-right: 2%;
-  padding-left: 2%; }
+  padding-left: 2%;
+  cursor: pointer; }
 
 .btn-disabled {
   color: rgba(230, 230, 230, 0.3);

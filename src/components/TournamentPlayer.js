@@ -5,7 +5,7 @@ export class TournamentPlayer extends Component {
 	
 	render() {
 		const { buttonName, onClick, disabled, winner } = this.props;
-		let className = "tournament-player";
+		let className = " btn tournament-player";
 		if (disabled) {
 			className += " disabled";
 		}

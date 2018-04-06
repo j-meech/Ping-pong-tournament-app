@@ -19,7 +19,7 @@ export class ListItem extends Component {
 			<li>
 				<div className="player-list-item">
 					{ player.get('name') }	
-					<Button buttonName="&#x2715;" className="delete-btn" onClick={ this.delete }/>
+					<Button buttonName="&#x2715;" className=" btn delete-btn" onClick={ this.delete }/>
 				</div>			
 			</li>
 		);
