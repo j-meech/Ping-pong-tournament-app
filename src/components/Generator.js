@@ -83,7 +83,7 @@ export class Generator extends Component {
 					!this.state.generated ? 
 					<div className="generator-container">
 						<h2>Add players here</h2>
-						<AddPlayers onSubmit={this.props.onSubmit} disabled={!disabled} players={ players }/>
+						<AddPlayers onSubmit={this.props.onSubmit} players={ players }/>
 						<ListPlayers players={ players } onDelete={ this.props.onDelete }/>
 						<Button className={buttonClassName} onClick={this.isGenerated} buttonName="Generate tournament!" disabled={ disabled }/>
 					</div>

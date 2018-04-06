@@ -5,7 +5,10 @@ import { Button } from './Button';
 export class RoundOne extends Component {
 	
 	render() {
-		const { pairs, winner, roundTwo } = this.props;
+		const { pairs, winner, roundTwo, shuffledPlayers } = this.props;
+		const numberOfRoundsWon = 
+		const disabled = 
+
 		return (
 			<div className="grid-container">
 				<ul className="tournament-grid">
@@ -27,7 +30,7 @@ export class RoundOne extends Component {
 					<li className="path-l three"></li>
 					<li className="path-l four"></li>
 					<li className="finish-round-btn">
-						<Button onClick={ roundTwo } className="btn" buttonName="Next round" /> 
+						<Button onClick={ roundTwo } className="btn" buttonName="Next round" disabled={  }/> 
 					</li>
 				</ul>
 
