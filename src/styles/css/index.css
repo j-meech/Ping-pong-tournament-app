@@ -68,6 +68,21 @@ ul {
   border-radius: 2rem;
   margin: auto; }
 
+.tournament-player {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 0.5rem; }
+
+.tournament-player.disabled {
+  background-color: transparent;
+  color: rgba(23, 28, 23, 0.7); }
+
+.tournament-player.disabled.winner {
+  border: solid 2px rgba(23, 28, 23, 0.7);
+  border-radius: 0.5rem; }
+
 .finish-round-btn {
   grid-column-start: 17;
   grid-column-end: span 1;
@@ -176,10 +191,11 @@ ul.tournament-grid.round-three {
 
 ul.tournament-grid.winner {
   display: grid;
-  grid-template-columns: 1fr 105px;
+  grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
   grid-template-rows: 60px; }
 
 .the-winner {
-  grid-column-end: span 1; }
+  grid-column-end: span 4;
+  font-size: 2rem; }
 
 /*# sourceMappingURL=index.css.map */

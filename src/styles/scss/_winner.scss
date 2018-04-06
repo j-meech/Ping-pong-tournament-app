@@ -5,10 +5,11 @@
 
 ul.tournament-grid.winner {
 	display: grid;
-	grid-template-columns: 1fr 105px;
+	grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
 	grid-template-rows: 60px; 
 }
 
 .the-winner {
-	grid-column-end: span 1;
+	grid-column-end: span 4;
+	font-size: 2rem;
 }

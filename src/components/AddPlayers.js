@@ -7,6 +7,7 @@ export class AddPlayers extends Component {
 	this.state = { 
 		value: "",
 		nameExists: false,
+		emptyName: true,
 	};
 	this.update = this.update.bind(this);
 	this.submit = this.submit.bind(this);
@@ -15,13 +16,18 @@ export class AddPlayers extends Component {
 	update(e) {
 		const { players } = this.props;
 		let nameExists = false;
+		let emptyName = false;
 		for (let i = 0; i < players.size; i++) {
 			if (e.target.value === players.get(i).get('name')) {
 				nameExists = true;
 			}
 		}
+		if (!e.target.value.replace(/^\s+/g, '').length || e.target.value === "") {
+			emptyName = true;
+		}
 		this.setState({ value: e.target.value });
 		this.setState({ nameExists: nameExists });
+		this.setState({ emptyName: emptyName });
 	}
 
 	submit(e) {
@@ -30,16 +36,17 @@ export class AddPlayers extends Component {
 		this.props.onSubmit(data);
 		this.setState({
 			value: "",
+			emptyName: true,
 		});
 	}
 
 	render() {
 		const { players } = this.props;
-		const disabled = players.size >= 8 || this.state.nameExists;
+		const disabled = players.size >= 8 || this.state.nameExists || this.state.emptyName;
 		const buttonClassName = disabled ? "btn btn-disabled" : "btn";
 		return (
 			<form onSubmit={ this.submit } disabled={disabled}>
-        		<input onChange={ this.update } value={ this.state.value } type="text" placeholder="Player's name" disabled={this.props.disabled} maxLength="8" />
+        		<input onChange={ this.update } value={ this.state.value } type="text" placeholder="Player's name" disabled={players.size >= 8} maxLength="8" />
         		<Button className={buttonClassName} buttonName="Add Player" disabled={disabled}/>
         		{ this.state.nameExists ? 
         			<p>*player already exists</p>
