@@ -43,7 +43,7 @@ export class AddPlayers extends Component {
 	render() {
 		const { players } = this.props;
 		const disabled = players.size >= 8 || this.state.nameExists || this.state.emptyName;
-		const buttonClassName = disabled ? "btn btn-disabled" : "btn";
+		const buttonClassName = disabled ? "btn btn-disabled add" : "btn add";
 		return (
 			<form onSubmit={ this.submit } disabled={disabled}>
         		<input onChange={ this.update } value={ this.state.value } type="text" placeholder="Player's name" disabled={players.size >= 8} maxLength="8" />

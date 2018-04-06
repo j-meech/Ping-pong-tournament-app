@@ -6,7 +6,7 @@ export class ListPlayers extends Component {
 	render() {
 		const { players, onDelete } = this.props;
 		return (
-			<div>
+			<div className="list-container">
 				{ players.count() ?
 					<ul>
 						{ players.map((player, index) => (

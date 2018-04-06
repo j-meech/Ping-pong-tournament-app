@@ -22,25 +22,5 @@
 }
 
 .tournament-player.disabled.winner {
-	// border: solid 2px $background-colour;
-	// border-radius: 0.5rem;
 	color: hsla(120, 10%, 60%, 0.7);
-}
-
-.finish-round-btn {
-	width: 150px;
-	grid-column-start: 17;
-	grid-column-end: span 1;
-	grid-row-start: 3;
-}
-
-.finish-round-btn.winner {
-	grid-row-start: 1;
-	margin-right: 0.5rem;
-}
-
-.hidden {
-	border: none;
-	background-color: transparent;
-	color: transparent;
 }

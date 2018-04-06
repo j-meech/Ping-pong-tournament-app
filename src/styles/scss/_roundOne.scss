@@ -32,9 +32,9 @@ li.tournament-pair {
 li.path-u {
 	grid-column-end: span 2;
 	grid-row-end: span 1;
-	border-bottom: solid 4px #fff;
-	border-left: solid 4px #fff;
-	border-right: solid 4px #fff;
+	border-bottom: solid 4px $white;
+	border-left: solid 4px $white;
+	border-right: solid 4px $white;
 	grid-row-start: 3;
 }
 
@@ -55,7 +55,7 @@ li.path-u.four {
 }
 
 li.path-i {
-	border-right: solid 2px #fff;
+	border-right: solid 2px $white;
 	grid-row-start: 4;
 }
 
@@ -76,7 +76,7 @@ li.path-i.four {
 }
 
 li.path-l {
-	border-left: solid 2px #fff;
+	border-left: solid 2px $white;
 	grid-row-start: 4;
 }
 

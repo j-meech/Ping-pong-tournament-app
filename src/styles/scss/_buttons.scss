@@ -1,0 +1,47 @@
+.btn {
+	color: $white;
+	background-color: transparent;
+	border: solid 2px $white;
+	margin: 1rem;
+	border-radius: 5pxpx;
+	padding: 1.5%;
+	padding-right: 2%;
+	padding-left: 2%;
+}
+
+.btn-disabled {
+	color: hsla(0, 0%, 90%, 0.3);
+	border-color: hsla(0, 0%, 90%, 0.3);
+}
+
+.finish-round-btn {
+	width: 150px;
+	grid-column-start: 17;
+	grid-column-end: span 1;
+	grid-row-start: 3;
+}
+
+.finish-round-btn.winner {
+	grid-row-start: 1;
+	margin-right: 0.5rem;
+}
+
+.hidden {
+	border: none;
+	background-color: transparent;
+	color: transparent;
+}
+
+.add {
+	font-size: 0.8rem;
+}
+
+.generate {
+	font-size: 1.5rem;
+}
+
+.new-tournament {
+	font-size: 2rem;
+	margin-top: 4vh;
+	margin-bottom: 6vh;
+}

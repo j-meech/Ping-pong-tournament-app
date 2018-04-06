@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  color: #fff; }
+  color: white; }
 
 .App {
   text-align: center; }
@@ -21,23 +21,15 @@ body {
   color: white; }
 
 .App-title {
-  font-size: 3em; }
-
-.btn {
-  color: #fff;
-  background-color: transparent;
-  border: solid 2px #fff;
-  margin: 1rem; }
-
-.btn-disabled {
-  color: rgba(230, 230, 230, 0.3);
-  border-color: rgba(230, 230, 230, 0.3); }
+  font-size: 5rem; }
 
 input {
-  color: #fff;
+  color: white;
   background-color: transparent;
   border: solid 2px #fff;
-  padding: 4px;
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 1.8%;
   margin: 4px; }
 
 ul {
@@ -50,14 +42,20 @@ ul {
   background-color: rgba(23, 28, 23, 0.7);
   padding: 2rem;
   border-radius: 2rem;
-  margin-left: 8vw; }
+  margin-left: 8vw;
+  margin-bottom: 5vh; }
+
+.list-container {
+  width: 80%;
+  margin: auto;
+  text-align: center; }
 
 .player-list-item {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 1rem; }
   .player-list-item .delete-btn {
-    color: #fff;
+    color: white;
     background-color: transparent;
     border: none; }
 
@@ -83,21 +81,6 @@ ul {
 
 .tournament-player.disabled.winner {
   color: rgba(143, 163, 143, 0.7); }
-
-.finish-round-btn {
-  width: 150px;
-  grid-column-start: 17;
-  grid-column-end: span 1;
-  grid-row-start: 3; }
-
-.finish-round-btn.winner {
-  grid-row-start: 1;
-  margin-right: 0.5rem; }
-
-.hidden {
-  border: none;
-  background-color: transparent;
-  color: transparent; }
 
 .grid-container {
   margin-top: 15vh;
@@ -127,9 +110,9 @@ li.tournament-pair {
 li.path-u {
   grid-column-end: span 2;
   grid-row-end: span 1;
-  border-bottom: solid 4px #fff;
-  border-left: solid 4px #fff;
-  border-right: solid 4px #fff;
+  border-bottom: solid 4px white;
+  border-left: solid 4px white;
+  border-right: solid 4px white;
   grid-row-start: 3; }
 
 li.path-u.one {
@@ -145,7 +128,7 @@ li.path-u.four {
   grid-column-start: 14; }
 
 li.path-i {
-  border-right: solid 2px #fff;
+  border-right: solid 2px white;
   grid-row-start: 4; }
 
 li.path-i.one {
@@ -161,7 +144,7 @@ li.path-i.four {
   grid-column-start: 14; }
 
 li.path-l {
-  border-left: solid 2px #fff;
+  border-left: solid 2px white;
   grid-row-start: 4; }
 
 li.path-l.one {
@@ -203,5 +186,45 @@ ul.tournament-grid.winner {
 .the-winner {
   grid-column-end: span 4;
   font-size: 2rem; }
+
+.btn {
+  color: white;
+  background-color: transparent;
+  border: solid 2px white;
+  margin: 1rem;
+  border-radius: 5pxpx;
+  padding: 1.5%;
+  padding-right: 2%;
+  padding-left: 2%; }
+
+.btn-disabled {
+  color: rgba(230, 230, 230, 0.3);
+  border-color: rgba(230, 230, 230, 0.3); }
+
+.finish-round-btn {
+  width: 150px;
+  grid-column-start: 17;
+  grid-column-end: span 1;
+  grid-row-start: 3; }
+
+.finish-round-btn.winner {
+  grid-row-start: 1;
+  margin-right: 0.5rem; }
+
+.hidden {
+  border: none;
+  background-color: transparent;
+  color: transparent; }
+
+.add {
+  font-size: 0.8rem; }
+
+.generate {
+  font-size: 1.5rem; }
+
+.new-tournament {
+  font-size: 2rem;
+  margin-top: 4vh;
+  margin-bottom: 6vh; }
 
 /*# sourceMappingURL=index.css.map */

@@ -76,7 +76,7 @@ export class Generator extends Component {
 	render() {
 	    const { players, shuffledPlayers, shuffledPlayerPairs, } = this.props;
 	    const disabled = players.size < 8;
-	    const buttonClassName = disabled ? "btn btn-disabled" : "btn";
+	    const buttonClassName = disabled ? "btn btn-disabled generate" : "btn generate";
 
 		return (
 			<div>

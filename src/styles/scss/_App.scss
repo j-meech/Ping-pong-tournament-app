@@ -14,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  color: #fff;
+  color: $white;
 }
 
 .App {
@@ -22,30 +22,20 @@ body {
 }
 
 .App-header {
-  color: white;
+  color: $white;
 }
 
 .App-title {
-  font-size: 3em;
-}
-
-.btn {
-	color: #fff;
-	background-color: transparent;
-	border: solid 2px #fff;
-	margin: 1rem;
-}
-
-.btn-disabled {
-	color: hsla(0, 0%, 90%, 0.3);
-	border-color: hsla(0, 0%, 90%, 0.3);
+  font-size: 5rem;
 }
 
 input {
-	color: #fff;
+	color: $white;
 	background-color: transparent;
 	border: solid 2px #fff;
-	padding: 4px;
+  border-radius: 8px;
+  font-size: 1rem;
+	padding: 1.8%;
 	margin: 4px;
 }
 

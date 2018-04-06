@@ -26,7 +26,7 @@ export class TournamentViewer extends Component {
 					<Winner theWinner={this.props.theWinner}/>
 				</div>
 				<div className="new-tournament-btn">
-					<Button className="btn" buttonName="New Tournament" onClick={this.onClick}/>
+					<Button className="btn new-tournament" buttonName="New Tournament" onClick={this.onClick}/>
 				</div>
 			</div>
 		);
