@@ -5,7 +5,7 @@
 
 ul.tournament-grid.winner {
 	display: grid;
-	grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
+	grid-template-columns: 1fr auto;
 	grid-template-rows: 60px; 
 }
 

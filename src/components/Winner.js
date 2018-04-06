@@ -9,7 +9,10 @@ export class Winner extends Component {
 		return (
 			<div className="grid-container winner">
 				<ul className="tournament-grid winner">
-					<li className="the-winner">{ theWinner ? winner : null }</li>				
+					<li className="the-winner">{ theWinner ? winner : null }</li>	
+					<li className="finish-round-btn">
+						<Button className="hidden" buttonName="Next round"/> 
+					</li>			
 				</ul>
 			</div>
 		);

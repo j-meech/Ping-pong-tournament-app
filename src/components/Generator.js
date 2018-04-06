@@ -34,6 +34,7 @@ export class Generator extends Component {
 			generated: !this.state.generated,
 			roundTwoPairs: List([]),
 			roundThreePairs: List([]),
+			theWinner: '',
 		});
 	}
 

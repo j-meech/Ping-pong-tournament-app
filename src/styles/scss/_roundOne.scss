@@ -2,7 +2,6 @@
 .grid-container {
 	margin-top: 15vh;
 	width: 95vw;
-	// background-color: $background-colour;
 	border-radius: 2rem 2rem 0rem 0rem;
 	padding: 0.8rem;
 	margin: auto;
@@ -16,15 +15,14 @@ ul.tournament-grid {
 
 li.tournament-pair {
 	font-size: 1rem;
-	margin: auto;
 	grid-column-end: span 4;
 	grid-row-end: span 2;
+	align-self: center;
 }
 
 .pair-container {
-	width: 21vw;
-	display: inline-flex;
-	justify-content: space-around;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 .player-container {

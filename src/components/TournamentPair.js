@@ -33,7 +33,6 @@ export class TournamentPair extends Component {
 	render() {
 		const { pair } = this.props;
 		const { disabled, winner0 } = this.state;
-		// const className = disabled ? "tournament-player disabled" : "tournament-player";
 		return (										
 			<div className="pair-container">
 				<TournamentPlayer buttonName={ pair.get(0).get('name') } onClick={ this.winner0 } disabled={ disabled } winner={ winner0 }/>
