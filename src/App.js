@@ -1,17 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import GeneratorContainer from './containers/GeneratorContainer';
+import Header from './components/Header';
 
-class App extends Component {
-  render() {
+const App = () => { 
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Ping Pong!</h1>
-        </header>
+        <Header />
         <GeneratorContainer />
       </div>
-    );
-  }
+    );  
 }
 
 export default App;

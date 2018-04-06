@@ -17,7 +17,7 @@ export class RoundTwo extends Component {
 	}
 
 	render() {
-		const { pairs, winner, roundThree, shuffledPlayers } = this.props;
+		const { pairs, winner, shuffledPlayers } = this.props;
 		const numberOfWinners = shuffledPlayers.filter(player => (player.get('won') === 2)).size;
 		const disabled = numberOfWinners === 2 && !this.state.clicked ? false : true;
 		const buttonClassName = disabled ? "btn btn-disabled" : "btn";

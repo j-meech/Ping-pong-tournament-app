@@ -17,7 +17,7 @@ export class RoundThree extends Component {
 	}
 
 	render() {
-		const { pairs, winner, roundThree, shuffledPlayers } = this.props;
+		const { pairs, winner, shuffledPlayers } = this.props;
 		const numberOfWinners = shuffledPlayers.filter(player => (player.get('won') === 3)).size;
 		const disabled = numberOfWinners === 1 && !this.state.clicked ? false : true;
 		const buttonClassName = disabled ? "btn btn-disabled" : "btn";
