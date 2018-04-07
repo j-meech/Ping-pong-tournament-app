@@ -215,6 +215,11 @@ ul {
 
   li.path-l.four {
     grid-column-start: 15; } }
+@media (max-width: 767px) {
+  li.tournament-pair {
+    background-color: rgba(23, 28, 23, 0.7);
+    border-radius: 10px;
+    margin: 1rem; } }
 @media (min-width: 768px) {
   .grid-container.round-two {
     border-radius: 0rem; }
