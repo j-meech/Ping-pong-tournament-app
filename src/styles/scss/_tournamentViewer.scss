@@ -18,9 +18,17 @@
 	border: none;
 	border-radius: 8px;
 	background-color: transparent;
-	font-size: 1.2rem;
+	font-size: 0.7rem;
 	color: #fff;
 	padding: 0.5rem;
+
+	@media (min-width: 850px) {
+		font-size: 0.9rem;
+	}
+
+	@media (min-width: 1026px) {
+		font-size: 1.1rem;
+	}
 }
 
 .tournament-player.disabled {
