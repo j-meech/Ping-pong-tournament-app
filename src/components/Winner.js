@@ -8,7 +8,7 @@ export class Winner extends Component {
 		const winner = "🏆 " + theWinner + "! 🎉";
 		return (
 			<div className="grid-container winner">
-				<ul className="tournament-grid winner">
+				<ul className="tournament-grid winner pait-container">
 					<li className="the-winner">{ theWinner ? winner : null }</li>	
 					<li className="finish-round-btn">
 						<Button className="hidden" buttonName="Next round" disabled="true"/> 

@@ -115,7 +115,8 @@ ul {
   background-color: rgba(23, 28, 23, 0.7);
   border-radius: 2rem;
   margin: auto;
-  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  text-align: center; }
 
 .info-text {
   padding-top: 20px;
@@ -127,15 +128,9 @@ ul {
   border: none;
   border-radius: 8px;
   background-color: transparent;
-  font-size: 0.7rem;
+  font-size: 1rem;
   color: #fff;
   padding: 0.5rem; }
-  @media (min-width: 850px) {
-    .btn.tournament-player {
-      font-size: 0.9rem; } }
-  @media (min-width: 1026px) {
-    .btn.tournament-player {
-      font-size: 1.1rem; } }
 
 .tournament-player.disabled {
   background-color: transparent;
@@ -144,110 +139,110 @@ ul {
 .tournament-player.disabled.winner {
   color: rgba(230, 230, 230, 0.4); }
 
-.grid-container {
-  margin-top: 15vh;
-  width: 95vw;
-  border-radius: 2rem 2rem 0rem 0rem;
-  padding: 0.8rem;
-  margin: auto; }
+@media (min-width: 768px) {
+  .grid-container {
+    margin-top: 15vh;
+    width: 95vw;
+    border-radius: 2rem 2rem 0rem 0rem;
+    padding: 0.8rem;
+    margin: auto; }
 
-ul.tournament-grid {
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(4, 40px); }
+  ul.tournament-grid {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(4, 40px); }
 
-li.tournament-pair {
-  grid-column-end: span 4;
-  grid-row-end: span 2;
-  align-self: center; }
+  li.tournament-pair {
+    grid-column-end: span 4;
+    grid-row-end: span 2;
+    align-self: center; }
 
-.pair-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; }
+  .pair-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
 
-.player-container {
-  display: inline-flex; }
+  .player-container {
+    display: inline-flex; }
 
-li.path-u {
-  grid-column-end: span 2;
-  grid-row-end: span 1;
-  border-bottom: solid 4px white;
-  border-left: solid 4px white;
-  border-right: solid 4px white;
-  grid-row-start: 3; }
+  li.path-u {
+    grid-column-end: span 2;
+    grid-row-end: span 1;
+    border-bottom: solid 4px white;
+    border-left: solid 4px white;
+    border-right: solid 4px white;
+    grid-row-start: 3; }
 
-li.path-u.one {
-  grid-column-start: 2; }
+  li.path-u.one {
+    grid-column-start: 2; }
 
-li.path-u.two {
-  grid-column-start: 6; }
+  li.path-u.two {
+    grid-column-start: 6; }
 
-li.path-u.three {
-  grid-column-start: 10; }
+  li.path-u.three {
+    grid-column-start: 10; }
 
-li.path-u.four {
-  grid-column-start: 14; }
+  li.path-u.four {
+    grid-column-start: 14; }
 
-li.path-i {
-  border-right: solid 2px white;
-  grid-row-start: 4; }
+  li.path-i {
+    border-right: solid 2px white;
+    grid-row-start: 4; }
 
-li.path-i.one {
-  grid-column-start: 2; }
+  li.path-i.one {
+    grid-column-start: 2; }
 
-li.path-i.two {
-  grid-column-start: 6; }
+  li.path-i.two {
+    grid-column-start: 6; }
 
-li.path-i.three {
-  grid-column-start: 10; }
+  li.path-i.three {
+    grid-column-start: 10; }
 
-li.path-i.four {
-  grid-column-start: 14; }
+  li.path-i.four {
+    grid-column-start: 14; }
 
-li.path-l {
-  border-left: solid 2px white;
-  grid-row-start: 4; }
+  li.path-l {
+    border-left: solid 2px white;
+    grid-row-start: 4; }
 
-li.path-l.one {
-  grid-column-start: 3; }
+  li.path-l.one {
+    grid-column-start: 3; }
 
-li.path-l.two {
-  grid-column-start: 7; }
+  li.path-l.two {
+    grid-column-start: 7; }
 
-li.path-l.three {
-  grid-column-start: 11; }
+  li.path-l.three {
+    grid-column-start: 11; }
 
-li.path-l.four {
-  grid-column-start: 15; }
+  li.path-l.four {
+    grid-column-start: 15; } }
+@media (min-width: 768px) {
+  .grid-container.round-two {
+    border-radius: 0rem; }
 
-.grid-container.round-two {
-  border-radius: 0rem; }
+  ul.tournament-grid.round-two {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 40px); } }
+@media (min-width: 768px) {
+  .grid-container.round-three {
+    border-radius: 0rem; }
 
-ul.tournament-grid.round-two {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(4, 40px); }
+  ul.tournament-grid.round-three {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 40px); } }
+@media (min-width: 768px) {
+  .grid-container.winner {
+    border-radius: 0rem 0rem 2rem 2rem; }
 
-.grid-container.round-three {
-  border-radius: 0rem; }
+  ul.tournament-grid.winner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 60px; }
 
-ul.tournament-grid.round-three {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 40px); }
-
-.grid-container.winner {
-  border-radius: 0rem 0rem 2rem 2rem; }
-
-ul.tournament-grid.winner {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: 60px; }
-
-.the-winner {
-  grid-column-end: span 4;
-  font-size: 2rem; }
-
+  .the-winner {
+    grid-column-end: span 4;
+    font-size: 2rem; } }
 .btn {
   color: white;
   background-color: transparent;
