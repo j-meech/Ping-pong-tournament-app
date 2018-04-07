@@ -4,6 +4,13 @@
 	background-color: $background-colour;
 	border-radius: 2rem;
 	margin: auto;	
+	box-shadow: 0px 4px 6px 0px hsla(0, 0%, 0%, 0.2);
+}
+
+.info-text {
+	padding-top: 20px;
+	margin: 0px;
+	color: $transparent-white;
 }
 
 .btn.tournament-player {
@@ -21,5 +28,5 @@
 }
 
 .tournament-player.disabled.winner {
-	color: hsla(120, 10%, 60%, 0.7);
+	color: hsla(0, 0%, 90%, 0.4);
 }
