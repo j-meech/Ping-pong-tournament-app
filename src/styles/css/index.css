@@ -99,6 +99,7 @@ ul {
 .btn.tournament-player {
   grid-column-end: span 1;
   border: none;
+  border-radius: 8px;
   background-color: transparent;
   font-size: 1.2rem;
   color: #fff;
@@ -228,6 +229,8 @@ ul.tournament-grid.winner {
   cursor: pointer;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.02em; }
+  .btn:hover {
+    background-color: rgba(26, 26, 26, 0.4); }
 
 .btn-disabled {
   color: rgba(230, 230, 230, 0.3);

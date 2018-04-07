@@ -10,6 +10,10 @@
 	cursor: pointer;
 	font-family: $font-stack;
 	letter-spacing: 0.02em;
+
+	&:hover {
+		background-color: hsla(120, 0%, 10%, 0.4);
+	}
 }
 
 .btn-disabled {
