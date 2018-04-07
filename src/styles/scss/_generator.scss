@@ -3,9 +3,10 @@
 	.generator-container {
 		width: 90vw;
 		background-color: $background-colour;
-		padding: 2rem;
+		padding: 1rem;
 		border-radius: 2rem;
 		margin: auto;
+		margin-bottom: 5vh;
 		box-shadow: 0px 4px 6px 0px hsla(0, 0%, 0%, 0.2);
 	}
 
@@ -36,9 +37,8 @@
 	.generator-container {
 		width: 40vw;
 		background-color: $background-colour;
-		padding: 2rem;
+		padding: 1rem;
 		border-radius: 2rem;
-		margin-top: 10vh;
 		margin-left: 8vw;
 		margin-bottom: 5vh;
 		box-shadow: 0px 4px 6px 0px hsla(0, 0%, 0%, 0.2);
