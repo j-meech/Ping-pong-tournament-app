@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import { ListItem } from './ListItem';
 
-export class ListPlayers extends Component {
-
-	render() {
-		const { players, onDelete } = this.props;
-		return (
-			<div className="list-container">
+export const ListPlayers = ({ players, onDelete }) => { 
+    return (
+        <div className="list-container">
 				{ players.count() ?
 					<ul>
 						{ players.map((player, index) => (
@@ -17,6 +14,5 @@ export class ListPlayers extends Component {
 					<p>No players yet</p>
 				}
 			</div>
-		);
-	}
+    );  
 }

@@ -14,8 +14,7 @@ export class TournamentPlayer extends Component {
 		}
 		
 		return (										
-				<Button buttonName={ buttonName } onClick={ onClick } disabled={ disabled } className={ className }/>
-				
+				<Button buttonName={ buttonName } onClick={ onClick } disabled={ disabled } className={ className }/>		
 		);
 	}
 }
