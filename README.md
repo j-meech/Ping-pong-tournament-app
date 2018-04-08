@@ -20,7 +20,8 @@ On the command line run
 
 ```git clone git@github.com:j-meech/Ping-pong-tournament-app.git
 yarn install
-yarn start```
+yarn start
+```
 
 ## Technologies
 
