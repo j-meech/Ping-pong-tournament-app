@@ -28,7 +28,7 @@ export class AddPlayers extends Component {
 			}
 		}
 		// check that the input field isn't empty or just spaces, don't allow empty field to be submitted
-		if (!e.target.value.replace(/^\s+/g, '').length || e.target.value === "") {
+		if (!e.target.value.replace(/^\s+/g, '').length || !e.target.value.length) {
 			emptyName = true;
 		}
 		// onChange update the value of the input field via local state
@@ -53,7 +53,7 @@ export class AddPlayers extends Component {
 		// get the players list from the store as prop from container
 		const { players } = this.props;
 		// decide if players name can be submitted, disabled if name already exists in array or name is blank
-		const disabled = this.state.nameExists || this.state.emptyName;
+		const disabled = players.size >= 8 || this.state.nameExists || this.state.emptyName;
 		// class name for styling dependant on whether button is diabled or not
 		const buttonClassName = disabled ? "btn btn-disabled add" : "btn add";
 		return (
@@ -65,12 +65,12 @@ export class AddPlayers extends Component {
         			value={ this.state.value } 
         			type="text" 
         			placeholder="Player's name" 
-        			disabled={players.size >= 8} 
+        			disabled={ players.size >= 8 } 
         			maxLength="8"/>
         		<Button 
-        			className={buttonClassName} 
+        			className={ buttonClassName } 
         			buttonName="Add Player" 
-        			disabled={disabled}/>
+        			disabled={ disabled }/>
         		{ this.state.nameExists ? 
         			<p>*player already exists</p>
         			: null
