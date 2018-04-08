@@ -1,3 +1,5 @@
+// Tournament viewer and player name styles
+
 .tournament-viewer-container{
 	margin-top: 15vh;
 	width: 95vw;
@@ -24,11 +26,13 @@
 	padding: 0.5rem;
 }
 
+// change player name colour when match is finished and button is disabled
 .tournament-player.disabled {
 	background-color: transparent;
 	color: $background-colour;
 }
 
+// change winner name colour when match is finished and button is disabled
 .tournament-player.disabled.winner {
 	color: hsla(0, 0%, 90%, 0.4);
 }
