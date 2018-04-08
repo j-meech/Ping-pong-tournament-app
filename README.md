@@ -18,7 +18,8 @@ You will need to have [yarn](https://yarnpkg.com/en/) installed.
 
 On the command line run 
 
-```git clone git@github.com:j-meech/Ping-pong-tournament-app.git
+```
+git clone git@github.com:j-meech/Ping-pong-tournament-app.git
 yarn install
 yarn start
 ```
