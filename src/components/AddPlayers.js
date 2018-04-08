@@ -28,7 +28,7 @@ export class AddPlayers extends Component {
 			}
 		}
 		// check that the input field isn't empty or just spaces, don't allow empty field to be submitted
-		if (!e.target.value.replace(/^\s+/g, '').length) {
+		if (!e.target.value.replace(/^\s+/g, '').length || e.target.value === "") {
 			emptyName = true;
 		}
 		// onChange update the value of the input field via local state
