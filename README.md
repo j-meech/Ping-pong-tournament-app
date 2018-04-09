@@ -92,4 +92,14 @@ I used code validators to check my HTML CSS and JavaScript.
 
 The use of dev tools throughout the build helped me iron out any bugs as I worked. However on testing in Safari I found that the user was able to enter an empty player name, this is not a problem in other browsers. It seems that it is to do with my use of a regex in order to eliminate the spaces however after I tried a few different expressions I have yet to solve it and it is still a problem to be fixed.
 
+## Changes/Lessons learned
+
+Overall I'm happy with the way the finished app is, I met the initial criteria I set for myself, and apart from the bug in Safari it feels fairly robust.
+
+The process has taught me a lot, it has improved my understanding of React and Redux, it has also taught me a lot about time management and planning as this is the first project I have done truly *alone*.
+
+However there are changes I would make moving forward. The functionality of the app is still limited to 8 players and I would like to change this. I have been researching bys, what to do if the initial number of players is not a power of 2 and how to work out the tournament based on this. I have found some formulas to help with this, working out the number of bys and number of matches to find the winner. I've found this fascinating and would like to build the app based on this, and feel I should have taken this approach from the begining rather than playing it safe and limiting myself. 
+I would also have approached the styling differently and from a mobile first perspective rather than the other way round as I had done, I feel like this is a more robust way of working and makes more sense.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
