@@ -34,10 +34,6 @@ I version managed the project with git.
 
 Initial notes and wireframes can be found [here](https://drive.google.com/open?id=1zDHAbkNBDRoSTjD4xGe5QXVO4kD6gqFU)
 
-## Choices
 
-## Testing
-
-## Changes
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
